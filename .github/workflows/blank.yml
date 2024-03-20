@@ -31,6 +31,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo "$GITHUB_REPOSITORY"
+          echo "${{ vars.ENV }}"
 
   # This workflow contains a job called "deployment"
   deployment:
@@ -39,4 +40,6 @@ jobs:
       name: Dev
     steps:
       - name: Deploy to Dev environment
-        run: echo "Deployment to Dev environment"
+        run: | 
+         echo "Deployment to Dev environment"
+         echo "${{ vars.ENV }}"
