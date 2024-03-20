@@ -43,3 +43,7 @@ jobs:
         run: | 
          echo "Deployment to Dev environment"
          echo "${{ vars.ENV }}"
+         echo "$GITHUB_WORKSPACE"
+         echo "{{ secret.USER_NAME}}"
+         echo "{{ secret.PASSWORD }}"
+         echo "{{ secret.HOSTNAME }}"
