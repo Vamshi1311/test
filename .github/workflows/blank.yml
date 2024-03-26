@@ -51,5 +51,6 @@ jobs:
          # echo "${{ vars.ARTIFACTS_PATH }}"
          # echo "${{ secrets.USER_NAME }}"
          # echo "${{ secrets.PASSWORD }}"
-         # echo "${{ secrets.HOSTNAME }}"
+         # echo "${{ secrets.HOSTNAME }}" 
+         &  "${{ github.workspace }}\.github\workflow\test.ps1" $SECRETS.USER_NAME $SECRETS.PASSWORD
          
