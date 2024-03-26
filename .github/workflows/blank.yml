@@ -43,16 +43,15 @@ jobs:
       name: Dev
     steps:
       - name: Deploy to Dev environment
-        shell: pwsh
         run: |
-         # echo "Deployment to Dev environment"
-         # echo "${{ vars.ENV }}"
-         # echo ${{ github.workspace }}
-         # echo "${{ vars.USER_NAME }}"
-         # echo "${{ vars.ARTIFACTS_PATH }}"
-         # echo "${{ secrets.USER_NAME }}"
-         # echo "${{ secrets.PASSWORD }}"
-         # echo "${{ secrets.HOSTNAME }}" 
+         echo "Deployment to Dev environment"
+         echo "${{ vars.ENV }}"
+         echo ${{ github.workspace }}
+         echo "${{ vars.USER_NAME }}"
+         echo "${{ vars.ARTIFACTS_PATH }}"
+         echo "${{ secrets.USER_NAME }}"
+         echo "${{ secrets.PASSWORD }}"
+         echo "${{ secrets.HOSTNAME }}" 
          Get-Location
          .\test.ps1 vamshi karre
          
