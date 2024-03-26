@@ -35,7 +35,7 @@ jobs:
 
   # This workflow contains a job called "deployment"
   deployment:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     environment: 
       name: Dev
     steps:
