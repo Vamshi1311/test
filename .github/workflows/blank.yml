@@ -31,9 +31,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo "$GITHUB_REPOSITORY"
-          echo "${{ vars.ENV }}"
-          Get-ChildItem -Path "${{ github.workspace }}\.github\workflows"
-          Get-Location
+          echo "$GITHUB_WORKSPACE"
+          
           
 
   # This workflow contains a job called "deployment"
@@ -52,6 +51,4 @@ jobs:
          echo "${{ secrets.USER_NAME }}"
          echo "${{ secrets.PASSWORD }}"
          echo "${{ secrets.HOSTNAME }}" 
-         Get-Location
-         &"${{ github.workspace }}/.github/workflows/test.ps1" vamshi karre
          
