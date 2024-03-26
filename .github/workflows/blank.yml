@@ -32,6 +32,8 @@ jobs:
           echo test, and deploy your project.
           echo "$GITHUB_REPOSITORY"
           echo "${{ vars.ENV }}"
+          Get-ChildItem -Path "${{ github.workspace }}"
+          
 
   # This workflow contains a job called "deployment"
   deployment:
@@ -41,11 +43,12 @@ jobs:
     steps:
       - name: Deploy to Dev environment
         run: | 
-         echo "Deployment to Dev environment"
-         echo "${{ vars.ENV }}"
-         echo ${{ github.workspace }}
-         echo "${{ vars.USER_NAME }}"
-         echo "${{ vars.ARTIFACTS_PATH }}"
-         echo "${{ secrets.USER_NAME }}"
-         echo "${{ secrets.PASSWORD }}"
-         echo "${{ secrets.HOSTNAME }}"
+         # echo "Deployment to Dev environment"
+         # echo "${{ vars.ENV }}"
+         # echo ${{ github.workspace }}
+         # echo "${{ vars.USER_NAME }}"
+         # echo "${{ vars.ARTIFACTS_PATH }}"
+         # echo "${{ secrets.USER_NAME }}"
+         # echo "${{ secrets.PASSWORD }}"
+         # echo "${{ secrets.HOSTNAME }}"
+         
