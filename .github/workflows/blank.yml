@@ -30,8 +30,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo "$GITHUB.REPOSITORY"
-          echo "$GITHUB.WORKSPACE"
+          echo "$github.repository"
+          echo "$github.workspace"
           
           
 
