@@ -52,5 +52,5 @@ jobs:
          # echo "${{ secrets.USER_NAME }}"
          # echo "${{ secrets.PASSWORD }}"
          # echo "${{ secrets.HOSTNAME }}" 
-         &  "${{ github.workspace }}\.github\workflow\test.ps1" $SECRETS.USER_NAME $SECRETS.PASSWORD
+         &  "${{ github.workspace }}\.github\workflows\test.ps1" $SECRETS.USER_NAME $SECRETS.PASSWORD
          
