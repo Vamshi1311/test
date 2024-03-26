@@ -33,6 +33,7 @@ jobs:
           echo "$GITHUB_REPOSITORY"
           echo "${{ vars.ENV }}"
           Get-ChildItem -Path "${{ github.workspace }}"
+          Get-Location
           
 
   # This workflow contains a job called "deployment"
