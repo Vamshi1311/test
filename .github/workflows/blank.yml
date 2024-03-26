@@ -43,7 +43,7 @@ jobs:
         run: | 
          echo "Deployment to Dev environment"
          echo "${{ vars.ENV }}"
-         echo "$GITHUB_WORKSPACE"
+         echo "$GITHUB.WORKSPACE"
          echo "${{ vars.USER_NAME }}"
          echo "${{ vars.ARTIFACTS_PATH }}"
          echo "${{ secrets.USER_NAME }}"
