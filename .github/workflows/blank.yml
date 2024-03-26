@@ -32,7 +32,7 @@ jobs:
           echo test, and deploy your project.
           echo "$GITHUB_REPOSITORY"
           echo "${{ vars.ENV }}"
-          Get-ChildItem -Path "${{ github.workspace }}/.github/workflow"
+          Get-ChildItem -Path "${{ github.workspace }}\.github\workflow"
           Get-Location
           
 
