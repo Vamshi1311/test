@@ -53,5 +53,5 @@ jobs:
          echo "${{ secrets.PASSWORD }}"
          echo "${{ secrets.HOSTNAME }}" 
          Get-Location
-         .\test.ps1 vamshi karre
+         &"${{ github.workspace }}/.github/workflows/test.ps1" vamshi karre
          
