@@ -43,7 +43,8 @@ jobs:
       name: Dev
     steps:
       - name: Deploy to Dev environment
-        run: | 
+        shell: pwsh
+        run: |
          # echo "Deployment to Dev environment"
          # echo "${{ vars.ENV }}"
          # echo ${{ github.workspace }}
