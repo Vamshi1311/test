@@ -31,7 +31,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           #echo "${{ github.repository }}"
-          #echo "${{ github.workspace }}"
+          echo "${{ github.workspace }}"
           echo $GITHUB_WORKSPACE
           
           
@@ -50,7 +50,7 @@ jobs:
          echo ${{ vars.USER_NAME }}
          echo ${{ vars.ARTIFACTS_PATH }}
          echo "${{ secrets.USER_NAME }}"
-         echo "${{ secrets.PASSWORD }}"
+         #echo "${{ secrets.PASSWORD }}"
          echo "${{ secrets.HOSTNAME }}"
         
          
