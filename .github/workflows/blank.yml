@@ -33,7 +33,7 @@ jobs:
           #echo "${{ github.repository }}"
           echo "${{ github.workspace }}"
           echo $GITHUB_WORKSPACE
-          echo "$githubrun_id"
+          echo "${{ githubrun_id }}"
           
           
 
